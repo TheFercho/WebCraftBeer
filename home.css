@@ -1,0 +1,101 @@
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            padding: 3px;
+            max-width: 100%;
+            min-height: 80vh;
+            overflow-x: hidden;
+            background-size: cover;
+            background: rgb(55, 53, 53);
+            color: #2b2a2a00;
+            background-color: #010101;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        
+        .container {
+            padding-top: 5px;
+            display: flex;
+            flex-direction: column;
+            background-color: rgba(35, 34, 34, 0.3);
+            color: black;
+            border-radius: 3px;
+        }
+        
+        .container p {
+            height: 30%;
+        }
+        
+        .container img {
+            border-radius: 3px;
+            object-fit: cover;
+            box-shadow: 10px 10px 20px black;
+        }
+        
+        img.logo {
+            width: 80px;
+            height: 80px;
+            top: auto;
+            left: auto;
+            border-radius: 50%;
+            position: absolute;
+            opacity: 0.9;
+            box-shadow: 10px 10px 20px black;
+            cursor: pointer;
+        }
+        
+        .container video {
+            border-radius: 3px;
+            object-fit: cover;
+            box-shadow: 5px 5px 10px black;
+        }
+        
+        .social {
+            width: 100vw;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            bottom: 0;
+            position: fixed;
+        }
+        
+        .social p {
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 20px;
+            padding: 5px;
+        }
+        
+        .links-redes {
+            gap: 20px;
+            padding-bottom: 8px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            text-align: center;
+        }
+        
+        .links-redes a i {
+            font-size: 1.5rem;
+            color: #fff;
+            gap: 20px;
+            align-content: space-between;
+        }
+        
+        .site-location {
+            font: bold;
+            text-align: center;
+            font-size: 14px;
+            font-weight: initial;
+            margin-bottom: 10px;
+        }
+        
+        .site-location a {
+            color: #fff;
+        }

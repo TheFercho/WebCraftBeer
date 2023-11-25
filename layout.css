@@ -1,0 +1,65 @@
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1.2fr 1.5fr;
+        grid-template-rows: 1fr 4fr 3fr 2fr;
+        height: 100vh;
+        margin: 1.5em;
+        border: 1px solid black;
+    }
+    
+    main {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        background: url(/img/canillas.jpeg) no-repeat;
+        background-position: center;
+        background-size: cover;
+        object-fit: fill;
+    }
+    
+    .info {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        background: grey;
+    }
+    
+    .media {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        background: orange;
+    }
+    
+    .footer {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        background: black;
+    }
+    
+    header {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        background: white;
+    }
+    
+    .beers {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 5;
+        background: url(/img/agua_celeste.jpeg);
+    }

@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@600&family=Roboto+Condensed:ital,wght@1,700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 1300px;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-size: cover;
+    background: black;
+    color: #fff;
+    background-color: #000;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+div nav {
+    background: rgba(211, 34, 34, 0.8);
+    opacity: 1;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+ul li {
+    align-items: baseline;
+    font-size: 18px;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    list-style: none;
+}
+
+footer {
+    font-size: 30px;
+}
+
+.contenedor {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+/*Nav Style*/
+
+.nav-menu {
+    background: rgba(0, 0, 0, 0.5);
+    font-weight: normal;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    text-align: center;
+    justify-content: space-around;
+    z-index: 50;
+    position: relative;
+    ;
+}
+
+.nav-brand {
+    top: 0;
+    left: 0;
+    align-self: flex-start;
+    width: 90px;
+    height: 90px;
+    opacity: 1;
+    border-radius: 100%;
+    z-index: 1;
+}
+
+
+/*nav-left*/
+
+.nav-menu li {
+    padding-top: 5px;
+    font-size: 20px;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    color: rgb(196, 182, 182);
+}
+
+.desplegable li a {
+    color: #fff;
+    display: none;
+    transition: 0.5s;
+}
+
+.desplegable:hover li a {
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.desplegable {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 0;
+}
+
+.desplegable li {
+    align-content: center;
+    justify-items: auto;
+}
+
+.nav-menu li a:hover {
+    transition: 0.2s;
+    border-bottom: 3px solid #ffff;
+}
+
+
+/*******BOTON RAYAS MENU*******/
+
+.menu-btn {
+    position: absolute;
+    cursor: pointer;
+    top: 30px;
+    right: 45px;
+    font-size: 2rem;
+    display: none;
+}
+
+
+/*Showcase*/
+
+.pinta_rebalsa {
+    width: 100%;
+    height: 600px;
+    display: block;
+}
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: #0e130b;
+    color: #ffff;
+    font-size: 14;
+    border: 1px solid #ffff;
+    margin: 10px 0;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    opacity: 0.7;
+}
+
+.showcase a.btn {
+    font-size: 10px;
+    margin-top: 0px;
+}
+
+
+/*REDES SOCIALES*/
+
+.social p {
+    background: #646862;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.site-location {
+    text-align: center;
+    font-size: 14px;
+    font-weight: initial;
+    opacity: 0.95;
+    margin-top: 14px;
+    margin-bottom: 10px;
+}
+
+.site-location_tel {
+    text-align: right;
+}
+
+.links-redes {
+    justify-content: space-between;
+    text-align: center;
+}
+
+.links-redes a {
+    margin: 0 10px;
+}
+
+.links-redes a i {
+    font-size: 2rem;
+}
+
+.footer {
+    font-size: small;
+    margin-top: 0px;
+    background-color: #6c6e6a;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.pils,
+.irish_red,
+.stout {
+    border: 1px rgba(48, 46, 46, 0.1);
+    width: 250px;
+    height: 250px;
+    float: none;
+    overflow: hidden;
+    margin-top: 50px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.estilos_cerveza {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pils {
+    background: url(/img/botella_pils.jpg);
+    background-position: center;
+    background-size: contain;
+}
+
+.irish_red {
+    background: url(/img/botella_irish.jpg);
+    background-position: center;
+    background-size: contain;
+}
+
+.stout {
+    background: url(/img/botella_stout.jpg);
+    background-position: center;
+    background-size: contain;
+}
+
+.estilo_principal_1,
+.estilo_principal_2,
+.estilo_principal_3 {
+    width: 500px;
+    height: 0px;
+    overflow: hidden;
+    margin: 10px;
+    background-position: right top;
+    background-size: contain;
+    transition: 1s;
+    float: right top;
+    margin-left: 400px;
+    margin-top: 10px;
+}
+
+.pils:hover~.estilo_principal_1 {
+    height: 100%;
+    float: initial;
+}
+
+.irish_red:hover~.estilo_principal_2 {
+    height: 100%;
+    float: initial;
+}
+
+.stout:hover~.estilo_principal_3 {
+    height: 100%;
+    float: initial;
+}
+
+
+/*VISTA DISPOSITIVOS MOVILES*/
+
+@media (max-width: 700px) {
+    /************SIDE BAR MENU CELULARES************/
+    .pinta_revalsa {
+        width: 90%;
+        height: auto;
+        position: fixed;
+    }
+    .nav-menu {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.5);
+        height: 100%;
+        z-index: 2;
+        padding: 10px;
+        opacity: 1;
+        transform: translateX(0px);
+        transition: transform 0.08s ease-in-out;
+    }
+    .menu-btn {
+        display: block;
+        cursor: pointer;
+        z-index: 10;
+    }
+    .nav-menu.show {
+        transform: translateX(-800px);
+        z-index: 10;
+        display: flex;
+        align-content: center;
+    }
+    .nav-menu li {
+        padding: 20px;
+        border-bottom: #ffff solid 1px;
+        font-size: 14px;
+    }
+    .nav-menu-right {
+        margin-right: 2px;
+    }
+    .showcase {
+        margin-bottom: 10px;
+        /*background: url(/img/botella_stout.jpg) no-repeat center;*/
+        background-position: absolute;
+        margin-left: 0px;
+    }
+    .showcase a.btn {
+        font-size: 5 px;
+        margin-top: 50px;
+    }
+    .pils,
+    .irish_red,
+    .stout {
+        border: 1px solid rgb(58, 56, 56);
+        width: 80px;
+        height: 100px;
+        float: left;
+        overflow: hidden;
+        margin-top: 50px;
+    }
+    .estilo_principal_1,
+    .estilo_principal_2,
+    .estilo_principal_3 {
+        border: 2.8px #646862;
+        width: 230px;
+        height: 0px;
+        overflow: hidden;
+        margin: 10px;
+        background-position: center center;
+        background-size: contain;
+        /*background-color: black;*/
+        transition: 1.5s;
+        float: right;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    .links-redes a i {
+        font-size: 0.7rem;
+        justify-content: center;
+        justify-items: auto;
+    }
+    .social {
+        margin-bottom: 5px;
+        margin-top: 5px;
+        margin-left: 5px;
+        font-size: small;
+        text-align: center;
+    }
+    .footer {
+        background-color: #6c6e6a;
+        position: sticky;
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .site-location {
+        margin-right: 15px;
+        font-size: 10px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        position: static;
+        text-align: center;
+    }
+}

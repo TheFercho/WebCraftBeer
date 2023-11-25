@@ -1,0 +1,37 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgba(32, 31, 31, 0.9);
+}
+
+.flexbox-container {
+    display: flex;
+    background-color: yellow;
+    justify-content: space-around;
+}
+
+.flexbox-item {
+    width: 200px;
+    margin: 10px;
+    border: 2px solid #000;
+    background-color: gray;
+}
+
+.flexbox-item-1 {
+    min-height: 100px;
+    order: 3;
+}
+
+.flexbox-item-2 {
+    min-height: 200px;
+    flex-grow: 1;
+    align-self: center;
+    order: 1;
+}
+
+.flexbox-item-3 {
+    min-height: 300px;
+    flex-grow: 2;
+    order: 2;
+}

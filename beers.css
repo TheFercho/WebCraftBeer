@@ -1,0 +1,240 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 3px;
+    max-width: 100%;
+    min-height: 80vh;
+    overflow-x: hidden;
+    background: black;
+    /* background: url(/img/tres_estilos_mountains.mp4); */
+    
+    color: #fff;
+    
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+div video{
+min-width: 100%;   
+}
+    
+   
+
+
+div nav {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.navbar {
+    margin-bottom: 10px;
+}
+
+a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container-estilos {
+    max-width: 1240px;
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 10px;
+    margin-bottom: 10px;
+    justify-items: center;
+    justify-content: space-between;
+    background-size: cover;
+    object-fit: cover;
+    border-radius: 1px;
+    border-color: #fff;
+}
+
+.pils {
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    border: #fff solid 1px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    box-shadow: 10px 10px 20px black;
+}
+
+.irish_red {
+    width: 100px;
+    height: 100px;
+    border: #fff solid 1px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    box-shadow: 10px 10px 20px black;
+}
+
+.stout {
+    width: 100px;
+    height: 100px;
+    border: #fff solid 1px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    box-shadow: 10px 10px 20px black;
+}
+
+.ventana_estilo {
+    width: 100vw;
+    min-height: 100vh;
+    margin-top: 20px;
+    border-radius: 3px;
+    background-position: center;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.flexbox div:hover {
+    margin: 2px solid #fff;
+}
+
+
+/***********************************************************************************/
+
+
+/******************************interactivo**********/
+
+
+/***********************************************************************************/
+
+.pils {
+    background: url(/img/botella_pils.jpg) no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.irish_red {
+    background: url(/img/botella_irish.jpg)no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.stout {
+    background: url(/img/botella_stout.jpg)no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.pils:hover~.ventana_estilo {
+    background: url(/img/pils_descripcion.jpg)no-repeat;
+    transition: 2s;
+    background-size: contain;
+    box-shadow: 10px 10px 20px black;
+}
+
+.irish_red:hover~.ventana_estilo {
+    background: url(/img/irish_descripcion.jpg)no-repeat;
+    transition: 2s;
+    background-size: contain;
+    box-shadow: 10px 10px 20px black;
+}
+
+.stout:hover~.ventana_estilo {
+    background: url(/img/stout_descripcion.jpg)no-repeat;
+    transition: 2s;
+    background-size: contain;
+    box-shadow: 10px 10px 20px black;
+}
+
+.flyers {
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    gap: 10px;
+}
+
+.flyers img {
+    width: 100vw;
+    border-radius: 5px;
+    background-size: cover;
+    align-items: center;
+    object-fit: cover;
+    opacity: 0.9;
+    box-shadow: 10px 10px 20px black;
+}
+
+
+/*REDES SOCIALES*/
+
+.social {
+    position: static center;
+}
+
+.social p {
+    text-align: center;
+    font-size: 20px;
+}
+
+.site-location_tel {
+    text-align: right;
+}
+
+.links-redes {
+    justify-content: space-around;
+    text-align: center;
+}
+
+.links-redes a i {
+    font-size: 1.5rem;
+}
+
+
+/*VISTA DISPOSITIVOS MOVILES*/
+
+@media (max-width: 700px) {
+    /************SIDE BAR MENU CELULARES************/
+    .pils,
+    .irish_red,
+    .stout {
+        border: 1.5px solid gray;
+        overflow: hidden;
+        align-self: center;
+    }
+    .container-estilos {
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+    }
+    .ventana_estilo {
+        background-position: center;
+        width: 100vw;
+        min-height: 70vh;
+    }
+    .flyers img {
+        width: 100vw;
+        background-position: center;
+    }
+    .links-redes a i {
+        justify-content: center;
+        justify-items: auto;
+    }
+}
+
+@media (max-width: 700px) {
+    .ventana_estilo {
+        min-height: 58vh;
+    }
+}
