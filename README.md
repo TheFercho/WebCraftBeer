@@ -2,8 +2,9 @@
 
 Página web estática, diseñada para una fábrica de cerveza atersanal en Italia.
 
+![image](https://github.com/TheFercho/WebCraftBeer/assets/105159929/30322113-16fb-497e-9db2-96575212c2ad)
 
-![img0](https://github.com/TheFercho/WebCraftBeer/assets/105159929/fcea4427-3c21-4302-a965-964a4c8881c6)
+
 
 
 ## Tecnologías utilizadas:
