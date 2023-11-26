@@ -6,4 +6,7 @@ Página web estática, diseñada para una fábrica de cerveza atersanal en Itali
 ## Tecnologías utilizadas:
 HTML | CSS | JS | PHP
 
-https://media.giphy.com/media/kvX00yPxZYFZ6/giphy.gif
+![giphy](https://github.com/TheFercho/WebCraftBeer/assets/105159929/d380e9dd-bc8f-415b-b38b-37e5d511526d)
+
+
+
